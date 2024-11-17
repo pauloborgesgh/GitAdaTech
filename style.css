@@ -28,3 +28,14 @@ a{
 a:hover{
     background-color: bisque;
 }
+
+.tabela, th, td{
+    border-collapse:collapse;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgb(160 160 160);
+}
+
+th,td:hover{
+    background-color: rgb(187, 201, 196);
+}
