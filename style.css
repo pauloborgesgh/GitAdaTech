@@ -1,0 +1,41 @@
+.set{
+    background-color:red;
+    font-size:10px;
+    margin:10px;
+}
+
+p{
+    font-size: large;
+    color: brown;
+    font-size: 20px;
+}
+.list,li,a{
+    display: flex;
+    margin: 5px;
+    text-decoration: none;
+    display: inline;
+    cursor: pointer;
+    background-color: rgb(233, 194, 143);
+    border-radius: 10px;
+    
+    
+}
+a{
+    background-color: antiquewhite;
+    padding: 10px;
+    border-radius: 10px;
+}
+a:hover{
+    background-color: bisque;
+}
+
+.tabela, th, td{
+    border-collapse:collapse;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgb(160 160 160);
+}
+
+th,td:hover{
+    background-color: rgb(187, 201, 196);
+}
