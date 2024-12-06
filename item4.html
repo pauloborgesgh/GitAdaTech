@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Peasy AI Chat Integration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fafb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #6366f1;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        main p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .btn-start-chat {
+            background-color: #6366f1;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-start-chat:hover {
+            background-color: #4f46e5;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Chat AI</h1>
+    </header>
+    <main>
+        <p>Precisa de ajuda? Clique no botão abaixo para iniciar o chat com nosso bot assistente!</p>
+        <button class="btn-start-chat" onclick="openChat()">Iniciar Chat</button>
+    </main>
+    <footer>
+        © 2024 Easy Peasy AI Bot Integration
+    </footer>
+
+    <!-- Easy Peasy AI Chat Script -->
+    <script 
+        src="https://bots.easy-peasy.ai/chat.min.js" 
+        data-chat-url="https://bots.easy-peasy.ai/bot/24edcb44-3d4d-4d85-8fc7-18a6419a2b9d" 
+        data-btn-position="bottom-right"
+        data-widget-btn-color="#6366f1"
+        defer>
+    </script>
+
+    <script>
+        // Function to programmatically open the chat widget
+        function openChat() {
+            const event = new Event('click');
+            const chatButton = document.querySelector('.easy-peasy-chat-btn');
+            if (chatButton) {
+                chatButton.dispatchEvent(event);
+            } else {
+                alert("O widget do chat ainda está carregando. Por favor, tente novamente em alguns segundos.");
+            }
+        }
+    </script>
+</body>
+</html>
